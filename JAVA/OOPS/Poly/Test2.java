@@ -20,5 +20,6 @@ class B extends A {
     @Override
     public void hello(){
         System.out.println("bye");
+        System.out.println("Bye2");
     }
 }
