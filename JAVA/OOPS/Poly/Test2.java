@@ -1,12 +1,12 @@
-package OOPS.Inheritence;
+package JAVA.OOPS.Poly;
 
 
 
-public class Test {
+public class Test2 {
     public static void main(String[] args) {
         B obj = new B();
         obj.hello();
-        obj.bye();
+
     }
 }
 
@@ -16,8 +16,9 @@ class A{
     }
 }
 
-class B extends A{
-    public void bye(){
+class B extends A {
+    @Override
+    public void hello(){
         System.out.println("bye");
     }
 }
