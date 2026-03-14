@@ -1,8 +1,6 @@
 package JAVA.OOPS.CollectionA;
 
-import java.util.HashMap;
-import java.util.Hashtable;
-import java.util.Map;
+import java.util.*;
 
 public class MapP {
     public static void main(String[] args) {
@@ -15,4 +13,6 @@ public class MapP {
             System.out.println(name + " : "+students.get(name));
         }
     }
+
+
 }
