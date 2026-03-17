@@ -10,10 +10,11 @@ public class App
     {
        ApplicationContext context = new ClassPathXmlApplicationContext("spring.xml");
 
-      Alien obj = (Alien) context.getBean("alien");
-      obj.setAge(21);
-      System.out.println(obj.getAge());
-      obj.code();
+      Hello obj = context.getBean(Hello.class);
+      System.out.println(obj.getMessage());
+
+
     }
 }
+
 
