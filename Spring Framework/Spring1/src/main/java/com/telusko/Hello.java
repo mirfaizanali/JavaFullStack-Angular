@@ -2,8 +2,14 @@ package com.telusko;
 
 public class Hello {
     private String message;
+
     public Hello(){
         System.out.println("Hello Object Created");
+    }
+
+    public Hello(String message){
+        System.out.println("Constructor Injection");
+        this.message = message;
     }
 
     public String getMessage() {

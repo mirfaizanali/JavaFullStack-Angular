@@ -6,14 +6,18 @@
 
     <!-- bean definitions here -->
 
-    <bean id="alien" class="com.telusko.Alien">
-        <property name="age" value="25"></property>
-        <property name="hlo" ref="hel"></property>
+    <bean id="hel" class="com.telusko.Hello">
+        <constructor-arg value="Xyz"/>
+        <property name="message" value="Ali"/>
+
     </bean>
 
-    <bean id="hel" class="com.telusko.Hello">
-        <property name="message" value="Ali"></property>
+    <bean id="alien" class="com.telusko.Alien">
+
+        <property name="hlo" ref="hel"/>
     </bean>
+
+
 </beans>
 
 
