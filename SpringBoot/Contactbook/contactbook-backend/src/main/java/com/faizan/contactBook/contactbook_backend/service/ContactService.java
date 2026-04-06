@@ -23,10 +23,15 @@ public class ContactService {
         return  contactRepo.findById(id);
     }
 
-    //Post
-    public void saveContact(Contact contact){
-        contactRepo.save(contact);
+   public Contact addContact(Contact contact){
+        return contactRepo.save(contact);
+   }
+
+    public Contact updateContact(Contact contact) {
+        return contactRepo.save(contact);
     }
 
-
+    public void deleteContact(int id) {
+         contactRepo.deleteById(id);
+    }
 }
